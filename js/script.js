@@ -156,7 +156,7 @@ function createModalForAllChar(btn) {
         ? currentChar?.image
         : currentChar?.gender === "male"
         ? "img/male.png"
-        : "/img/female.png"
+        : "img/female.png"
     } />
       <div class="modal__text">
       <div class="modal__info"><p>Name: <span class="modal__current-info"> ${
