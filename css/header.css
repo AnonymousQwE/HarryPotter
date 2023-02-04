@@ -1,0 +1,111 @@
+.header {
+  max-height: 80px;
+  min-width: 100%;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  background: rgb(116, 116, 116);
+  padding: 5px 15px;
+}
+.header__right {
+  display: flex;
+  justify-content: center;
+}
+.header__logo {
+  font-size: 35px;
+  padding-bottom: 10px;
+  letter-spacing: 3px;
+  font-family: "HarryPotter", serif;
+}
+.header_nav {
+  flex-grow: 1;
+}
+.nav__list {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  list-style: none;
+}
+.nav__item a {
+  color: rgba(0, 0, 0, 0.842);
+  font-size: 25px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.header__dream-team {
+  font-size: 30px;
+  background-color: rgb(126, 126, 126);
+  padding: 5px;
+  color: rgba(0, 0, 0, 0.74);
+  border-radius: 50%;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.header__dream-team:hover {
+  text-shadow: 1px 1px 5px rgb(219, 219, 219);
+  box-shadow: 0px 0px 7px rgb(219, 219, 219);
+}
+.header__search {
+  display: flex;
+  align-items: center;
+  padding: 2px 5px;
+  width: 100%;
+  /* background-color: rgba(219, 219, 219, 0.171); */
+  transition: 0.5s;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+.header__search input {
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  display: none;
+  transition: 0.5s;
+}
+.search__block {
+  display: block !important;
+}
+.search__active {
+  background: rgb(219, 219, 219) !important;
+}
+.header__search i {
+  font-size: 30px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.header__search i:hover {
+  text-shadow: 1px 1px 5px white;
+}
+.header__search input:focus {
+  outline: none;
+}
+
+@media (max-width: 670px) {
+  .wrapper {
+    margin: 0;
+    min-width: 100vw !important;
+  }
+  .header {
+    min-width: 100vw;
+  }
+  .header__logo {
+    font-size: 30px;
+  }
+  .header_nav {
+    display: none;
+  }
+  .nav__list {
+    justify-content: center;
+  }
+  .nav__item a {
+    font-size: 20px;
+  }
+}
+@media (max-width: 520px) {
+  .header__logo {
+    font-size: 25px;
+  }
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <title>HarryPotter</title>
+  </head>
+  <body>
+    <div id="dreamTeamDrawer">
+      <h3>Избранное</h3>
+      <div class="dream-team__close">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <ul class="dream-team__list"></ul>
+    </div>
+    <div class="loader opacity">
+      <div class="lds-roller">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__logo">
+          <h2>Harry Potter</h2>
+        </div>
+        <div class="header__right">
+          <div class="header__search">
+            <input id="searchInput" type="text" />
+            <i id="searchBtn" class="fa-brands fa-searchengin"></i>
+          </div>
+          <div class="header__dream-team">
+            <i class="fa-solid fa-people-group"></i>
+          </div>
+        </div>
+      </header>
+      <section>
+        <h2 class="section__title">Все герои</h2>
+        <div class="filter">
+          <span>Фильтр:</span>
+
+          <button class="filter__btn active" data-home="All">
+            <span>Все</span>
+          </button>
+          <button class="filter__btn" data-home="Gryffindor">
+            <img src="/img/gryff.webp" alt="" />
+          </button>
+          <button class="filter__btn" data-home="Slytherin">
+            <img src="/img/slyt.webp" alt="" />
+          </button>
+          <button class="filter__btn" data-home="Hufflepuff">
+            <img src="/img/huff.webp" alt="" />
+          </button>
+          <button class="filter__btn" data-home="Ravenclaw">
+            <img src="/img/rave.webp" alt="" />
+          </button>
+        </div>
+        <div class="cards"></div>
+      </section>
+      <footer></footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/js/modal_script.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/modal.js"></script>
+  </body>
+</html>
