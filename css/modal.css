@@ -75,6 +75,14 @@
   cursor: pointer;
   opacity: 0.75;
 }
+.btn__ok {
+  background: none;
+  border: none;
+  transition: 0.3s;
+}
+.btn__ok:hover {
+  text-shadow: 0 0 15px #ffffff;
+}
 
 .modal__body {
   position: relative;

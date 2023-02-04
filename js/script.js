@@ -3,6 +3,7 @@ const cards = document.querySelector(".cards");
 const loaded = document.querySelector(".loader");
 const serverChars = loadCharacters();
 const modal = createModal();
+const wrapper = document.querySelector(".wrapper");
 
 //Create Modal
 function createModal() {
@@ -213,7 +214,7 @@ function createModalForAllChar(btn) {
       <div class="modal__info"><p>Hogwarts Student: <span class="modal__current-info"> ${
         currentChar?.hogwartsStudent ? "Yes" : "No"
       }</span></p></div>
-      <div class="modal__info"><p>Hogwarts Student: <span class="modal__current-info"> ${
+      <div class="modal__info"><p>Hogwarts Stuff: <span class="modal__current-info"> ${
         currentChar?.hogwartsStaff ? "Yes" : "No"
       }</span></p></div>
     </div>
@@ -258,7 +259,7 @@ searchButton.addEventListener("click", () => {
           .innerHTML.toLowerCase();
 
         if (searchValue) {
-          if (cardTitle.indexOf(searchValue)) {
+          if (!cardTitle.includes(searchValue)) {
             card.classList.add("opacity-none");
             setTimeout(() => card.classList.add("none"), 1000);
           } else {

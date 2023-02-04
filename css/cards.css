@@ -6,7 +6,7 @@
   grid-column-gap: 10px;
   padding: 10px;
   justify-items: center;
-  transition: 5s;
+  /* transition: 5s; */
 }
 .card {
   position: relative;
@@ -23,7 +23,7 @@
   align-items: center;
   transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
   overflow: hidden;
-  transition: 1s;
+  transition: .5s;
   /* animation: opacity1 2s; */
 }
 .card::before {

@@ -7,8 +7,8 @@ function modalHandlerCreate(targetId) {
   let findChar = dreamTeam.find((char) => char === targetId);
   const modalOK = document.querySelector("[data-handler=modalHandlerOk]");
   findChar
-    ? (modalOK.innerHTML = `<i class="fa-solid fa-trash modal-icon"></i>`)
-    : (modalOK.innerHTML = `<i class="fa-solid fa-plus modal-icon"></i>`);
+    ? (modalOK.innerHTML = `<i class="fa-solid fa-heart modal-icon"></i>`)
+    : (modalOK.innerHTML = `<i class="fa-regular fa-heart modal-icon"></i>`);
 
   modalOK.addEventListener("click", addToDT);
 }
@@ -30,8 +30,8 @@ function addToDT() {
   localStorage.setItem("dreamTeam", JSON.stringify(dreamTeam));
   renderDreamTeam();
   modalOK.innerHTML = currentFindChar
-    ? `<i class="fa-solid fa-plus modal-icon"></i>`
-    : `<i class="fa-solid fa-trash modal-icon"></i>`;
+    ? `<i class="fa-regular fa-heart modal-icon"></i>`
+    : `<i class="fa-solid fa-heart modal-icon"></i>`;
 }
 
 const dreamTeamOpenBtn = document.querySelector(".header__dream-team");

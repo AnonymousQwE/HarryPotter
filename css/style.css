@@ -39,6 +39,9 @@ body {
   opacity: 0 !important;
   transition: 1s !important;
 }
+.fixed {
+  position: fixed;
+}
 
 /* LOADER */
 .loader {
